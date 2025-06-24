@@ -116,12 +116,12 @@ const Navbar = () => {
 >
   Help
 </Link>
- <Link
+ {/* <Link
                 to="/group-trips"
                 className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-1.5 rounded font-semibold text-base transition duration-200"
               >
                groups
-              </Link>
+              </Link> */}
         </div>
 
         {/* Right: Auth buttons */}

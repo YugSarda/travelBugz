@@ -81,7 +81,7 @@ import ManageUsers from "../pages/ManageUsers";
 import ItineraryGeneratorPage from '../pages/ItineraryGeneratorPage';
 import ChatPage from "../pages/ChatPage";
 // Import Recommendation Pages
-import GroupTripDashboard from "../pages/GroupTripDashboard";
+// import GroupTripDashboard from "../pages/GroupTripDashboard";
 
 
 const AppRoutes = () => {
@@ -121,7 +121,7 @@ const AppRoutes = () => {
       <Route path="/itinerary" element={<ItineraryGeneratorPage />} />
       <Route path="*" element={<NotFound />} />
        <Route path="/chat" element={<ChatPage />} />
-       <Route path="/group-trips" element={<GroupTripDashboard />} />
+       {/* <Route path="/group-trips" element={<GroupTripDashboard />} /> */}
     </Routes>
   );
 };

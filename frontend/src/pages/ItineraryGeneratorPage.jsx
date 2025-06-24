@@ -8,7 +8,7 @@
 
 // const ItineraryGeneratorPage = () => {
 //   const [itinerary, setItinerary] = useState([]);
-//   const [loading, setLoading] = useState(false);
+//   const [loading, setLoading] = useState(false);min-h-screen bg-gradient-to-br from-blue-100 to-cyan-100 py-10 px-6 md:px-12
 //   const [submitted, setSubmitted] = useState(false);
 //   const [weather, setWeather] = useState(null);
 
@@ -130,14 +130,14 @@ const ItineraryGeneratorPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-cyan-100 py-10 px-6 md:px-12">
+    <div className="min-h-screen p-6 bg-[#002b6b] flex items-center justify-center">
       <div className="max-w-[1600px] mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-blue-800 mb-2">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-2">
             🌍 Plan Your Custom Trip
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="text-white text-lg">
             Enter destination & dates to get a full itinerary with weather insights
           </p>
         </div>

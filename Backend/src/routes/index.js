@@ -8,7 +8,7 @@ import flightRoutes from "./flights.routes.js";
 import userRoutes from "./user.routes.js";
 import weatherRoutes from './weatherRoutes.js';
 import chatbotRoute from './chatbotRoute.js';
-import groupTripRoutes from './groupTripRoutes.js';
+// import groupTripRoutes from './groupTripRoutes.js';
 
 
 
@@ -27,5 +27,5 @@ router.use("/users", userRoutes);
 router.use('/itinerary', itineraryRoutes);
 router.use('/weather', weatherRoutes);
 router.use('/chat', chatbotRoute);
-router.use('/group-trips', groupTripRoutes);
+// router.use('/group-trips', groupTripRoutes);
 export default router;

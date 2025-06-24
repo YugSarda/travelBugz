@@ -6,7 +6,7 @@ const Booking = () => {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-br from-blue-100 to-cyan-100 py-10 px-6 md:px-12"
+      className="min-h-screen p-6 bg-[#002b6b] flex items-center justify-center"
     >
       {/* 🔹 Dark Overlay for readability */}
       <div className="absolute inset-0 bg-opacity-60"></div>

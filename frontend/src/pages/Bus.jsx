@@ -47,7 +47,7 @@ const Bus = () => {
   
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-cyan-100 py-10 px-6 md:px-12">
+    <div className="min-h-screen p-6 bg-[#002b6b]">
 
       {/* 🔹 Title */}
       <h2 className="text-4xl font-extrabold text-center text-white mb-8 animate-fadeIn">
