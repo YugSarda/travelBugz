@@ -19,7 +19,7 @@ const Login = () => {
       localStorage.setItem("token", token);
       localStorage.setItem("userRole", role);
       localStorage.setItem("username", username);
-      
+      localStorage.setItem("userId", userId); // Store user ID if needed
       console.log("Received token:", token);
       console.log("Received role:", role);
       const redirectPath = role === "admin" ? "/admin-dashboard" : "/user-dashboard";

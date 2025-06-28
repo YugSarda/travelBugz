@@ -1,16 +1,4 @@
-// // src/pages/ChatbotPage.jsx
-// import React from "react";
-// import Chatbot from "../components/Chatbot";
 
-// const ChatbotPage = () => {
-//   return (
-//     <div className="min-h-screen bg-gray-100">
-//       <Chatbot />
-//     </div>
-//   );
-// };
-
-// export default ChatbotPage;
 import React from 'react';
 import Chatbot from '../components/Chatbot';
 

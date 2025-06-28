@@ -32,7 +32,7 @@ export const login = asyncHandler(async (req, res) => {
     );
 
     // Return token and user role
-    res.json(new ApiResponse(200, "Login successful", { token, role: user.role }));
+    res.json(new ApiResponse(200, "Login successful", { token, role: user.role ,userId: user._id, username: user.username, email: user.email }));
 });
 
 

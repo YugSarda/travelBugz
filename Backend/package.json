@@ -11,9 +11,9 @@
   "license": "ISC",
   "author": "Tanuj Tenguriya",
   "type": "module",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/app.js"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
@@ -30,6 +30,7 @@
     "mongoose": "^8.12.1",
     "mongoose-aggregate-paginate-v2": "^1.1.4",
     "multer": "^2.0.1",
-    "openai": "^5.3.0"
+    "openai": "^5.3.0",
+    "socket.io": "^4.8.1"
   }
 }

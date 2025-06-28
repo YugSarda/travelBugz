@@ -1,13 +1,12 @@
-// import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-// const groupTripSchema = new mongoose.Schema({
-//   tripName: { type: String, required: true },
-//   destination: { type: String, required: true },
-//   startDate: { type: Date, required: true },
-//   endDate: { type: Date, required: true },
-//   description: { type: String },
-//   createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-//   members: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]
-// }, { timestamps: true });
+const groupSchema = new mongoose.Schema({
+  name: String,
+  destination: String,
+  interests: [String],
+  travelDate: Date,
+  members: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+  messages: [{ type: mongoose.Schema.Types.ObjectId, ref: "Message" }],
+});
 
-// export default mongoose.model('GroupTrip', groupTripSchema);
+export default mongoose.model("Group", groupSchema);

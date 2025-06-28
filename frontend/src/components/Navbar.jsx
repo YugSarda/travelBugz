@@ -111,17 +111,18 @@ const Navbar = () => {
           </Link>
            <Link to="/itinerary" className="hover:underline hover:text-yellow-400 transition duration-200">Itinerary</Link>
            <Link
+                to="/group-trip"
+                className= "hover:underline hover:text-yellow-400 transition duration-200"
+              >
+               groups
+              </Link>
+           <Link
   to="/chat"
   className="hover:underline hover:text-yellow-400 transition duration-200"
 >
   Help
 </Link>
- {/* <Link
-                to="/group-trips"
-                className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-1.5 rounded font-semibold text-base transition duration-200"
-              >
-               groups
-              </Link> */}
+ 
         </div>
 
         {/* Right: Auth buttons */}

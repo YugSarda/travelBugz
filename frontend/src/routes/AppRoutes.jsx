@@ -82,9 +82,10 @@ import ItineraryGeneratorPage from '../pages/ItineraryGeneratorPage';
 import ChatPage from "../pages/ChatPage";
 // Import Recommendation Pages
 // import GroupTripDashboard from "../pages/GroupTripDashboard";
-
+import GroupTripPage from "../pages/GroupTripPage"; // Assuming you have a GroupTripPage component
 
 const AppRoutes = () => {
+  const userId = localStorage.getItem("userId"); // Assuming you store userId in localStorage
   return (
     <Routes>
       {/* Public Routes */}
@@ -117,7 +118,7 @@ const AppRoutes = () => {
         <Route path="/admin/manage-users" element={<ManageUsers />} />
 
       </Route>
-     
+      <Route path="/group-trip" element={<GroupTripPage userId={userId} />} />
       <Route path="/itinerary" element={<ItineraryGeneratorPage />} />
       <Route path="*" element={<NotFound />} />
        <Route path="/chat" element={<ChatPage />} />
