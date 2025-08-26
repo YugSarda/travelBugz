@@ -40,12 +40,4 @@ export const deletePackage = asyncHandler(async (req, res) => {
     res.json(new ApiResponse(200, null, "Package deleted successfully"));
 });
 
-export const getAIRecommendations = asyncHandler(async (req, res) => {
-    const { username } = req.query;
-    const limit = parseInt(req.query.limit) || 5;
-    
-    if (!username) throw new ApiError(400, "Username is required");
-    
-    const recommendations = await RecommendationService.getRecommendations(username, limit);
-    res.json(new ApiResponse(200, recommendations, "AI recommendations generated successfully"));
-});
+

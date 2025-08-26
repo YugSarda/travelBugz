@@ -7,10 +7,10 @@ import {
     updatePackage,
     deletePackage
 } from "../controllers/package.controller.js";
-import { verifyAdmin } from "../middlewares/auth.middleware.js";  // Import admin verification
+import { verifyAdmin } from "../middlewares/auth.middleware.js";  
 
 
-// Add this route before export
+
 
 const router = express.Router();
 
